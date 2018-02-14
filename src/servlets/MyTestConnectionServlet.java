@@ -22,6 +22,7 @@ public class MyTestConnectionServlet extends HttpServlet {
         try {
             Class.forName("com.mysql.jdbc.Driver");
 
+
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/kcs", "root", "MySQL");
             if(connection != null){
                 System.out.println("PRISIJUNGEME");
